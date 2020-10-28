@@ -22,6 +22,8 @@ function saiUnfocus() {
     // index %= anims.length;
 }
 
+
+// Focus Script (JS) controls the enabling/disabling of SAI
 module.exports = {
 	enter: enter,
 	exit: exit
