@@ -5,14 +5,14 @@ const anims = ['happy', 'sad', 'pulse', 'idle', 'move', 'work', 'talk', 'highlig
 var index = 0;
 
 function enter() {
-    btn.on('activated', onLoginBtn);
+    btn.on('activated', saiActivate);
 }
 
 function exit() {
-    btn.off('activated', onLoginBtn);
+    btn.off('activated', saiActivate);
 }
 
-function onLoginBtn() {
+function saiActivate() {
     app.sai.unfocus();
     app.sai.write('');
     app.sai.speak("ok, i'll follow you.<break time=\"2s\"/> how did you like that dramatic pause?", function() {
