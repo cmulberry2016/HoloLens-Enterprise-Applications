@@ -17,6 +17,7 @@ function saiActivate() {
     app.sai.speak("ok, i'll follow you.<break time=\"2s\"/> how did you like that dramatic pause?", function() {
         app.sai.write('I\'m done talking.')
     });
+    // TODO: Figure out a way to nicely implement animations (Commenting just for practice) 
     // app.sai.animate(anims[index++]);
     // index %= anims.length;
 }
