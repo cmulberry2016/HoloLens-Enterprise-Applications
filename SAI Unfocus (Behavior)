@@ -14,7 +14,6 @@ function exit() {
 
 function saiActivate() {
     app.sai.unfocus();
-    app.sai.write('');
     app.sai.speak("ok, i'll follow you.<break time=\"2s\"/> how did you like that dramatic pause?", function() {
         app.sai.write('I\'m done talking.')
     });
