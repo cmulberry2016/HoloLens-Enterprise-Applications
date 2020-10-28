@@ -1,5 +1,7 @@
 // This script is intended to be used with the 'Unfocus' Vine script 
 
+const timers = require('timers');
+
 const btn = this.findOne('..btn-unfocus');
 const anims = ['happy', 'sad', 'pulse', 'idle', 'move', 'work', 'talk', 'highlight', 'scan'];
 var index = 0;
@@ -14,9 +16,18 @@ function exit() {
 
 function saiUnfocus() {
     app.sai.unfocus();
-    app.sai.speak("ok, i'll follow you.<break time=\"2s\"/> how did you like that dramatic pause?", function() {
-        app.sai.write('I\'m done talking.')
+    
+    timers.setInterval(app.sai.speak("ok, i'll follow you.") {
+  	log.info('The time is: ' + time.now());
+	}, 2000);
+
+    app.sai.speak("How did you like that pause?");
+    
+     app.sai.write('I\'m done talking.')
     });
+    
+    
+    
     // TODO: Figure out a way to nicely implement animations (Commenting just for practice) 
     // app.sai.animate(anims[index++]);
     // index %= anims.length;
