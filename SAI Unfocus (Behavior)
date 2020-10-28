@@ -1,3 +1,5 @@
+// This script is intended to be used with the 'Unfocus' Vine script 
+
 const btn = this.findOne('..btn-unfocus');
 const anims = ['happy', 'sad', 'pulse', 'idle', 'move', 'work', 'talk', 'highlight', 'scan'];
 var index = 0;
